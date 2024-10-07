@@ -19,9 +19,7 @@ use App\Http\Controllers\Auth\DashboardController as ControllersDashboardControl
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
 
 Route::get('/dashboard', [ControllersDashboardController::class, 'index'])
     ->middleware(['auth'])
