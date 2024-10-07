@@ -34,6 +34,7 @@ Route::middleware('auth')->group(function () {
     Route::delete('/messages/multiple', [MessageController::class, 'destroyMultiple'])->name('messages.destroyMultiple');
     Route::delete('/messages/{id}', [MessageController::class, 'destroy'])->name('messages.destroy');
     Route::post('/sponsorship/store', [SponsorshipController::class, 'store'])->name('sponsorship.store');
+    
 });
 
 Route::get('/autocomplete', [AutocompleteController::class, 'autocomplete']);
